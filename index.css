@@ -1,0 +1,136 @@
+:root{
+  --texto-principal: #FFFFFF;
+  --texto-secundario: #C0C0C0;
+  --botao: #167BF7;
+  --botao-hover: #025f5f;
+  --plane-de-fundo: #00030C;
+  --fonte-principal: 'Inter';
+}
+
+body{
+  background-color: var(--plane-de-fundo);
+  color: var(--texto-principal);
+}
+
+p{
+  color: var(--texto-secundario);
+}
+
+.principal{
+  background-image: url("/image/Background.png");
+}
+
+.box{
+  height: 100vh;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  text-align: center;
+}
+
+.botao{
+  background-color: var(--botao);
+  display: block;
+  border-radius: 5px;
+  padding: 1rem;
+  text-decoration: none;
+  text-align: center;
+  color: var(--texto-principal);
+  margin-bottom: 1rem;
+}
+
+.botao:hover{
+  background-color: var(--botao-hover);
+  transition: 200ms;
+}
+
+.pacote_simples{
+  background-color: transparent;
+  border: 2px solid #FFFFFF;
+}
+
+.pacote_simples:hover{
+  background-color: transparent;
+  border-color: var(--botao-hover);
+  color: var(--botao-hover);
+}
+
+.box_descricao{
+  margin: 0 4rem;
+}
+
+.box_imagem{
+  margin: 1em 0 2em 0;
+
+}
+
+.dispositivos{
+  display: flex;
+  justify-content: space-around;
+  list-style-type: none;
+}
+
+.box_dispositivos{
+  text-align: center;
+}
+
+h1{
+  font-size: 50px;
+}
+
+.imagem8{
+  position: relative;
+  z-index: 1;
+  transform: translate(10%,-60%);
+}
+
+p{
+  font-size: 20px;
+}
+
+.smartphone_assista{
+  position: absolute;
+  transform: translate(-340%, 120%);
+}
+
+.footer_list{
+  list-style-type: none;
+  display: flex;
+  justify-content: space-around;
+}
+
+.rodape__texto{
+  text-align: center;
+  font-size: 16px;
+}
+
+.rodape__lista{
+  display: flex;
+  list-style-type: none;
+  justify-content: space-around;
+}
+
+.lista__link a{
+  text-decoration: none;
+  color: var(--texto-principal);
+}
+
+.lista__link a:hover{
+  color: var(--botao-hover);
+}
+
+.rodape{
+  margin-top: 4rem;
+  align-items: center;
+  text-align: center;
+}
+
+.assine{
+  text-decoration: none;
+  font-size: 20px;
+  color: var(--texto-principal);
+}
+
+.assine:hover{
+  color: var(--botao-hover);
+}
